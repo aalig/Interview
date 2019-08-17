@@ -22,9 +22,9 @@ namespace Interview
             var maxPrice = books.Max(b => b.Price);
             var minPrice = books.Min(b => b.Price);
             var averagePrice = books.Average(b => b.Price);
-            var totalPrices = books.Sum(b => b.Price);
+            var totalPrice = books.Sum(b => b.Price);
 
-            Console.WriteLine("Max Price: {0}, Min Price: {1}, Total Price: {2}", maxPrice, minPrice, totalPrices);
+            Console.WriteLine("Max Price: {0}, Min Price: {1}, Average Price: {2} Total Price: {3}", maxPrice, minPrice, averagePrice, totalPrice);
 
             Console.ReadLine();
         }
