@@ -14,7 +14,6 @@ namespace Interview
                 .OrderBy(b => b.Title)
                 .Select(b => b.Title);
 
-
             foreach (var book in cheapBooks)
             {
                 Console.WriteLine(book);
