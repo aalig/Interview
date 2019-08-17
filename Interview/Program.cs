@@ -14,7 +14,6 @@ namespace Interview
                 .OrderBy(b => b.Title)
                 .Select(b => b.Title);
 
-
             foreach (var book in cheapBooks)
             {
                 Console.WriteLine(book);
@@ -22,6 +21,7 @@ namespace Interview
 
             var maxPrice = books.Max(b => b.Price);
             var minPrice = books.Min(b => b.Price);
+            var averagePrice = books.Average(b => b.Price);
             var totalPrices = books.Sum(b => b.Price);
 
             Console.WriteLine("Max Price: {0}, Min Price: {1}, Total Price: {2}", maxPrice, minPrice, totalPrices);
